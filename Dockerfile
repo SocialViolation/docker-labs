@@ -34,12 +34,12 @@ RUN mkdir -p /usr/docker-labs/
 ADD . /usr/docker-labs/
 
 # install npm dependencies - angular2
-WORKDIR /usr/docker-labs/docker-angular2/
-RUN npm install
+#WORKDIR /usr/docker-labs/docker-angular2/
+#RUN npm install
 
 # install npm dependencies - nodejs
-WORKDIR /usr/docker-labs/docker-nodejs/
-RUN npm install
+#WORKDIR /usr/docker-labs/docker-nodejs/
+#RUN npm install
 
 # Set working directory
 WORKDIR /usr/docker-labs/
