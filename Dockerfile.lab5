@@ -1,0 +1,20 @@
+# LAB 2 - this is a comment
+FROM alpine:3.4 
+MAINTAINER Your name "youremail@email.com"
+
+RUN apk add --no-cache nodejs bash
+
+# Create the MongoDB data directory
+RUN mkdir -p /data/db
+
+# Create working directory
+RUN mkdir -p /usr/docker-labs/
+
+# Set working directory
+WORKDIR /usr/docker-labs/
+
+# Bundle projects source
+ADD . /usr/docker-labs/
+
+EXPOSE 3000
+ENTRYPOINT ["bash", "./entrypoint.lab5.sh"]

@@ -1,0 +1,13 @@
+version: "2"
+services:
+  db:
+    image: mongo
+  web:
+    build: .
+    ports:
+     - "3000:3000"
+     - "3002:3002"
+    depends_on:
+     - db 
+    links:
+     - "db:mongohost"
