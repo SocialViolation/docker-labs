@@ -1,0 +1,10 @@
+.signage-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.signage-container img {
+  height: 150px;
+}

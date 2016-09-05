@@ -8,6 +8,8 @@
 		<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
 		<link rel="stylesheet" href="node_modules/todomvc-common/base.css">
 		<link rel="stylesheet" href="node_modules/todomvc-app-css/index.css">
+		<link rel="stylesheet" href="/assets/css/styles.css">
+		<link rel='shortcut icon' type='image/x-icon' href='/assets/img/favicon.ico' />
 
 		<script src="node_modules/es6-shim/es6-shim.min.js"></script>
     <script src="node_modules/systemjs/dist/system-polyfills.js"></script>
@@ -33,11 +35,18 @@
 	<script>
 		System.import('app/main').catch(function(err){ console.error(err); });
 	</script>
-
 		<demo-todo-list>Loading...</demo-todo-list>
-
 		<script src="node_modules/jquery/dist/jquery.min.js"></script>
 		<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-
 	</body>
+	<footer>
+		<div class="signage-container">
+			<a href="https://shinesolutions.com/">
+				<img src="/assets/img/shine-logo.png" alt="Shine Solutions" />
+			</a>
+			<a href="https://docs.docker.com/">
+				<img src="/assets/img/docker-logo.png" alt="Docker" />
+			</a>
+		</div>
+	</footer>
 </html>
